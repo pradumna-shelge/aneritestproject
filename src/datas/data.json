@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1230886,
+      "name": "Bhaumik Naik",
+      "email": "naik_bhaumik@botsford.example",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 1230884,
+      "name": "Acaryatanaya Somayaji",
+      "email": "acaryatanaya_somayaji@jones.test",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 1230883,
+      "name": "Rohit Pothuvaal",
+      "email": "rohit_pothuvaal@flatley.example",
+      "gender": "female",
+      "status": "active"
+    },
+    {
+      "id": 1230882,
+      "name": "Devadatt Ahluwalia",
+      "email": "ahluwalia_devadatt@keebler-lindgren.example",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 1230881,
+      "name": "Aadrika Verma I",
+      "email": "verma_aadrika_i@waters.test",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 1230880,
+      "name": "Kashyap Naik",
+      "email": "kashyap_naik@schmitt.example",
+      "gender": "female",
+      "status": "inactive"
+    },
+    {
+      "id": 1230879,
+      "name": "Avani Banerjee",
+      "email": "avani_banerjee@jast.example",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 1230878,
+      "name": "Dakshayani Khanna",
+      "email": "dakshayani_khanna@wintheiser.example",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 1230877,
+      "name": "Chandranath Patil CPA",
+      "email": "cpa_patil_chandranath@thiel-wyman.example",
+      "gender": "female",
+      "status": "active"
+    },
+    {
+      "id": 1230876,
+      "name": "Divakar Namboothiri Ret.",
+      "email": "ret_divakar_namboothiri@littel.test",
+      "gender": "male",
+      "status": "inactive"
+    }
+  ]

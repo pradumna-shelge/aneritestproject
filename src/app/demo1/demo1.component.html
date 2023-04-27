@@ -1,0 +1,64 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<form class="" [formGroup]='newForm'>
+    <div>
+        <label for="" class="">Name</label>
+        <input type="text" formControlName="name">
+        <div *ngIf="name?.touched || name?.dirty">
+            <small *ngIf="name?.errors?.['required'] ">
+                name is required
+            </small>
+            <small *ngIf="name?.errors?.['minlength'] ">
+        Name must be at least 4 characters long.
+      </small>
+            <small *ngIf="name?.errors?.['nameValid'] && !name?.errors?.['required'] && !name?.errors?.['minlength']">
+                name is not vaild
+            </small>
+        </div>
+    </div>
+    <div>
+        <label for="" class="">email</label>
+        <input type="email" formControlName="email">
+        <div *ngIf="email && email.touched || email?.dirty">
+<small *ngIf="email?.errors?.['required']">
+email is required
+</small>
+<small *ngIf="!email?.errors?.['required'] &&email?.errors?.['email']  " >
+    email is not valid
+    </small>
+    
+        </div>
+    </div>
+    <div>
+        <label for="" class="">password</label>
+        <input type="password" formControlName="password">
+        <div *ngIf="password && password.touched || password?.dirty">
+            <small *ngIf="password?.errors?.['required']">
+            password is required
+            </small>
+            <small *ngIf="!password?.errors?.['required'] && password?.errors?.['minLength']" >
+                password shold be More than 8 Characters
+                </small>
+                <small *ngIf="!password?.errors?.['required'] &&password?.errors?.['pattern']" >
+                    Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
+                    </small>
+                    </div>
+    </div>
+    <div>
+        <label for="" class="">conform password</label>
+        <input type="password" formControlName="conformPassword">
+    </div>
+    <div>
+        <label for="">Date</label>
+        <input type="date" formControlName="date">
+        <div *ngIf="date?.touched">
+            
+<small *ngIf="date?.errors?.['dateValid']">
+date not valid
+</small>
+        </div>
+    </div>
+    <div>
+        <button class="border bg-white p-4 w-full" [disabled]="newForm.invalid" (click)="onsubmit()">submit</button>
+    </div>
+
+</form>

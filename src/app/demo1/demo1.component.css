@@ -1,0 +1,30 @@
+form{
+    width: 45%;
+    background-color: #ccc;
+    padding: 1%;
+}
+
+input[type=text],input[type=email],input[type=password],input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  label{
+    font-size: large;
+  }
+  small{
+    color: crimson;
+  }
+
+button:disabled{
+    background-color: rgb(164, 172, 172);
+    color: #726b6b;
+}
+button{
+    background-color: rgb(13, 240, 6);
+    color: #fffcfc;
+}

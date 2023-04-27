@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { Demo1Component } from './demo1/demo1.component';
-import { NewgardGuard } from './gard/newgard.guard';
-import { HomeComponent } from './home/home.component';
+import { SimpleGuard } from './gard/simple.guard';
+import { HomepageComponent } from './homepage/homepage.component';
+import { SecoundGuard } from './secound.guard';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'form',component:Demo1Component,
-  
-canActivate:[NewgardGuard]}
+
+  {path:'home',component:HomepageComponent,
+canDeactivate:[SecoundGuard]},
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+{path:'admin',loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule),
+canActivate:[SimpleGuard]}
+
 ];
 
 @NgModule({

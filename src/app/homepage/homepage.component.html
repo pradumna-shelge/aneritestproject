@@ -1,0 +1,11 @@
+<h1>Welcome Homepage</h1>
+
+<form [formGroup]="newform">
+
+    <div>
+    <label for='name' class=''></label>
+       <input type='text' formControlName='name'>
+    
+    </div>
+    <button (click)="onchange()" [disabled]="false">Change</button>
+</form>
